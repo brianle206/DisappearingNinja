@@ -6,5 +6,10 @@
 	</head>
 	<body>
 		<h1>No Ninja's here</h1>
+		<img src="{{ url_for('static', filename='') }}{{filename}}">
+ 			{% for filename in filenames %}
+   			<img src="{{ url_for('static', filename='') }}{{filename}}">
+ 			{% endfor %}
 </body>
 </html>
+
